@@ -2,7 +2,8 @@
 
 To run game you should do the next instructions in the terminal: 
 
-'''sh
+
+```sh
 cd game
 python3 main.py
-'''
+```
