@@ -6,8 +6,6 @@ import pandas as pd
 
 def run():
     '''
-    
-    
     data = list(filter(lambda item: item['Continent'] == continent, data))
     countries = list(map(lambda x: x['Country/Territory'], data))
     percentages = list(map(lambda x: x['World Population Percentage'], data))
