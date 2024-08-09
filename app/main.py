@@ -13,20 +13,16 @@ def run():
 
     country = input('Type country => ')
     print('Pais seleccionado', country)
-    print("step1")
-    #name_country = country
-    #print(name_country*2)
+    name_country = country
+    data = read_csv.read_csv('data.csv')
     result= utils.population_by_country(data, country)
-    print(result)
+    #print(result)
     #print(result)
     if len(result)>0:
-        print("step3")
         country = result[0]
-        print("step4")
         labels, values = utils.get_population(country)
-        print("step5")
-        charts.generate_bar_chart(labels, values)
-        print("step6")
+        charts.generate_bar_chart(name_country, labels, values)
+        
 
 if __name__ == '__main__': 
     run()

@@ -10,10 +10,10 @@ import matplotlib.pyplot as plt
 #     plt.show()
 
 # Ahora vamos a recibir valores dinamicos 
-def generate_bar_chart(labels, values): #add labels y valus like parametros 
+def generate_bar_chart(name_country, labels, values): #add labels y valus like parametros 
     fig, ax = plt.subplots()
     ax.bar(labels, values)
-    plt.savefig('bar.png')
+    plt.savefig(f'./imgs/{name_country}.png')
     plt.close()
 
 def generate_pie_chart(labels, values):
